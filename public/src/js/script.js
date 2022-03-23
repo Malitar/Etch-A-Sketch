@@ -3,6 +3,7 @@
  */
 function drawDivs(amountToDraw = 16){
     const grid = document.querySelector('.grid-container');
+    const calcedHeight = 100/amountToDraw;
     for(let i = 0; i < amountToDraw; i++){
         const gridBoxesOuter = document.createElement('div');
         gridBoxesOuter.classList.add(`grid-box-outer`);
@@ -10,6 +11,8 @@ function drawDivs(amountToDraw = 16){
             const gridBoxesInner = document.createElement('div');
             gridBoxesInner.classList.add(`grid-box-inner`, `grid-box-${i}-inner-${j}`);
             gridBoxesInner.setAttribute('data-key', `${i}${j}`);
+            //gridBoxesInner.style.height = `${calcedHeight}em`;
+            //gridBoxesInner.style.width = `${calcedHeight}em`;
             gridBoxesOuter.appendChild(gridBoxesInner);
         }
         grid.appendChild(gridBoxesOuter);

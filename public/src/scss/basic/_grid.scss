@@ -1,9 +1,11 @@
 .grid-container {
+    height: 90vh;
+    width: 90vh;
+    margin: 0 auto;
     .grid-box-outer {
-        display: flex;
-
+        display: flex;        
         .grid-box-inner {
-            border: 1px solid black;
+            border: 1px solid $color_border;
             flex: 1 0 auto;
             aspect-ratio: 1 / 1;
         }
