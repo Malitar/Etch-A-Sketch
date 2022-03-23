@@ -6,9 +6,10 @@
 *   BASIC PAGE STYLINGS
 ********************** */
 @import './basic/basic';
+@import './basic/grid';
 @import './basic/variables';
 
 /* **********************
 *   ELEMENTS
 ********************** */
-@import './elements';
+@import './components/elements';

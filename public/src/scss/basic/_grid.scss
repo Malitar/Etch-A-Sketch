@@ -1,0 +1,11 @@
+.grid-container {
+    .grid-box-outter {
+        display: flex;
+
+        .grid-box-inner {
+            border: 1px solid black;
+            flex: 1 0 auto;
+            aspect-ratio: 1 / 1;
+        }
+    }
+}
