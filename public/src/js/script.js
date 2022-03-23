@@ -10,8 +10,6 @@ function drawDivs(){
             const gridBoxesInner = document.createElement('div');
             gridBoxesInner.classList.add(`grid-box-inner`, `grid-box-${i}-inner-${j}`);
             gridBoxesInner.setAttribute('data-key', `${i}${j}`);
-            //gridBoxesInner.addEventListener('mouseover', mouseHover);
-
             gridBoxesOutter.appendChild(gridBoxesInner);
         }
         grid.appendChild(gridBoxesOutter);
